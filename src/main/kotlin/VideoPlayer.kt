@@ -22,7 +22,6 @@ fun playVideo(filename: String, device: StreamDeckMk2) {
         start()
     }
     val soundPlayer: SoundPlayer? = if (grabber.hasAudio()) SoundPlayer(grabber) else null
-    val frameConverter = Java2DFrameConverter()
     var timestamp = 0L
     while (true) {
         val frame = grabber.grabFrame(
@@ -46,7 +45,6 @@ fun playVideo(filename: String, device: StreamDeckMk2) {
 
     soundPlayer?.close()
     grabber.close()
-    frameConverter.close()
 }
 
 class SoundPlayer(private val grabber: FrameGrabber) : Closeable {
