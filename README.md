@@ -15,11 +15,11 @@ To build the project, run:
 
 
 ## Run
-First of all quit Elgato Stream Deck app or any other app that can connect to Stream Deck (e.g. Hammerspoon, BetterTouchTool).
+First of all quit the Elgato Stream Deck app or any other app that can connect to the Stream Deck (e.g. Hammerspoon, BetterTouchTool).
 
-After project is built, tou can run it like this:
+After the project is built, you can run it like this:
 ```shell
-java -jar build/libs/StreamDeckVideoPlayer-1.0-SNAPSHOT.jar "/path/to/your.video.mp4"
+java -jar build/libs/StreamDeckVideoPlayer-1.0-SNAPSHOT.jar "$HOME/Downloads/bad_apple_120.mp4"
 ```
 
-Note the last argument – it should be a path to existing video file.
+Note the last argument – it should be a path to an existing video file.
